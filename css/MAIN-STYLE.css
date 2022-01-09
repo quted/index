@@ -1,0 +1,158 @@
+@charset "utf-8";
+/* CSS Document */
+.mega-menu{ width: 1000%; left: -400%}
+@media (max-width:992px){
+	.mega-menu{ width: 100%; left: 0}
+}
+aside .nav-link{
+    border-bottom: solid 1px #ddd;
+    color: #666;
+    font-size: 18px;
+    background: url("../IMAGES/nav-link-dot.png") no-repeat 5px center;
+}
+#bysize ul li a{
+    font-size: 30px;
+    background: none;
+    border: none;
+}
+.page-title{
+    background: url("../IMAGES/Blog-title.jpg") no-repeat ;
+    min-height: 300px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Poppins:wght@100;400&display=swap');
+
+@font-face {
+	font-family: 'Conv_Homework';
+	src: url('fonts/Homework.eot');
+	src: local('☺'), url('fonts/Homework.woff') format('woff'), url('fonts/Homework.ttf') format('truetype'), url('fonts/Homework.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font-family: 'Poppins', sans-serif;	
+    h1,h2,h3,h4,h5 {font-family: 'Abhaya Libre', serif; color: #4b4b4b}
+	h1{font-size: 60px}
+    h2{font-size: 42px}
+}
+.tde{font-family: 'Conv_Homework'}
+#welcome{
+    background-image: url("../IMAGES/top-left2.png"), url("../IMAGES/right-bottom2.png");
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    min-height: 700px;
+}
+@media(max-width:768px){#welcome {background: none;}
+}
+
+#welcome .wel img{border: 8px solid #FC9F22; transition: all .5s}
+#welcome .wel:hover >img{ filter: blur(2px)}
+#welcome .wel .detail{position: absolute; width: 80%; top: 22%; color:#FC9F22; font-weight: 500; visibility: hidden; transition: all .2s}
+#welcome .wel:hover >.detail{ opacity: 1; visibility: visible }
+
+#trending ul {
+    border: none;
+}
+#trending .nav-link {
+   background: url("../IMAGES/blue_180x180 1.png")no-repeat center top;
+    width:180px;height: 180px; border: none; margin: 0 10px;
+    display: flex; align-items: center;justify-content: center;
+    font-weight: bold;
+}
+#trending .tab1{
+    color: #BEEEED;
+}
+#trending .tab2{
+    background: url("../IMAGES/pink_180x180 1.png");
+    color: #FEB3C7;
+}
+#trending .tab3{
+    background: url("../IMAGES/sandal_180x180 1.png");
+    color: #FDDA9D;
+}
+.rounded-30{
+    border-radius: 30px;
+}
+#trending .product-tab{
+    position: relative;
+    transition: all 0.5s
+}
+#trending .product-tab .overlay{
+    background: rbga(225,225,225,.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;top: 0px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    opacity:0;
+    transition: all .5s;
+    padding: 0 15%;
+}
+#trending .product-tab:hover{
+    box-shadow: 1px 1px 5px #ccc;
+}
+#trending .product-tab:hover > image{
+    blur: 5px;
+}
+#trending .product-tab:hover > .overlay{
+    opacity: 1;
+    
+}
+#trending button {
+    padding: 2%;
+    font-size: 20pt;
+}
+#services {background: url("../IMAGES/bg-high qality.jpg") repeat-y center top; min-height: 500px;}
+.bg-dark20{background-color: rgba(0,0,0,.4)}
+#flavours {
+    background-image: url("../IMAGES/left-top0.png"),url("../IMAGES/right-top.png");
+    background-position: left top,right top;
+    background-repeat: no-repeat,no-repeat;
+    min-height: 700px;
+}
+#flavours .img-right{right:0;}
+.bg-kem{background:url("../IMAGES/flavours1.jpg") no-repeat center top;
+min-height:700px;
+}
+@media(max-width: 992px){
+    #flavours {background-image: none;}
+}
+@media(max-width: 768px){
+    .bg-kem{background: none;}
+    #clients{background-image: none}
+   
+}
+#customers .carousel-indicators{bottom: -50px}
+#customers .carousel-indicators li{
+    background-color: #ddd;
+}
+#customers .carousel-indicators li.active{
+    background-color: #D7FE83;
+}
+#clients{background-image: url("../IMAGES/bg-our client.png"); background-position: top; min-height: 500px;background-repeat: no-repeat;}
+.blankfield{
+    height: 150px;
+}
+#prices{
+    background: url("../IMAGES/bg-our price.jpg") no-repeat center center;min-height: 500px;
+}
+@media (max-width:992px){
+    #prices{
+    background: url("../IMAGES/bg-our price.jpg") no-repeat center center;min-height: 500px;
+    background-size: 200% 150%;    
+}
+}
+#form button{border:none;border-radius:5px;background-color:#5EB8C0;}
+#form{background-image:url("../IMAGES/bg-contact.jpg");background-repeat: repeat-y;}
+.contact-box{background-color:rgba(255,253,253,0.78); }
+.price-box{
+    background-color: #17a2b8;
+}
+.price-box:hover{
+    background-color: #8FA83B;
+}
+.price-box:hover button{
+  background-color: #8FA83B;color:white;border: none;
+}
